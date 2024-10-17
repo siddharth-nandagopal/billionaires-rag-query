@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "billionaires_rag_query"
+version = "0.1.0"
+description = "Billionaires RAG Query is a Retrieval-Augmented Generation (RAG) framework designed to ingest and analyze the world's billionaires list, including details such as names, net worth, age, nationality, and primary sources of wealth. This project demonstrates how to use LLMs to interpret structured tabular data within textual documents, providing precise answers to queries about the wealthiest individuals."
+authors = ["Siddharth Nandagopal"]
+readme = "README.md"
+packages = [{include = "billionaires_rag_query"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.2.3"
+beautifultable = "^1.1.0"
+opencv-python = "^4.10.0.84"
+camelot-py = "^0.11.0"
+ghostscript = "^0.7"
+jinja2 = "^3.1.4"
+lxml = "^5.3.0"
+openai = "^1.51.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
